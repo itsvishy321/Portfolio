@@ -4,13 +4,11 @@ import "../index.css";
 import {
   Services,
   About,
-  Clients,
   Contact,
   Portfolio,
   Resume,
-  Testimonials,
-  Blog,
 } from "../components/index";
+import Technologies from "../components/Technologies";
 
 const MainContent = () => {
   const [activeSection, setActiveSection] = useState("About");
@@ -47,8 +45,7 @@ const MainContent = () => {
         <div className="animate-show">
           <About />
           <Services />
-          <Testimonials />
-          <Clients />
+          <Technologies/>
         </div>
       )}
 
@@ -66,7 +63,6 @@ const MainContent = () => {
 
       {activeSection === "Blog" && (
         <div className="animate-show">
-          <Blog />
         </div>
       )}
 

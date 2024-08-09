@@ -60,7 +60,7 @@ h5 {
   left: 0;
   width: 40px;
   height: 7px;
-  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  background: linear-gradient(to right, #a3e635, #84cc16);
   border-radius: 3px;
 }
 
@@ -147,7 +147,7 @@ article.active {
   left: -42px;
   height: 6px;
   width: 6px;
-  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  background: linear-gradient(to right, #a3e635, #84cc16);
   border-radius: 50%;
   box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
 }

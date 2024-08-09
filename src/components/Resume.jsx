@@ -1,7 +1,8 @@
 import React from "react";
 import { resumeData, skills } from "../content"; // Assuming resumeData and skills are imported correctly
 import "../index.css"; // Importing CSS styles
-import { book, book2 } from "../assets/image";
+import { book, book2 , por} from "../assets/image";
+import DownloadResumeButton from "./DownloadRessumeButton";
 
 // Functional component for displaying resume information and skills
 const Resume = () => {
@@ -13,6 +14,8 @@ const Resume = () => {
           Resume
         </h2>
       </header>
+
+      <DownloadResumeButton/>
 
       {/* Education timeline section */}
       <section className="timeline mb-[30px] max-md:mb-[15px]">
@@ -28,16 +31,21 @@ const Resume = () => {
         <ol className="timeline-list ml-[65px] text-[15px]">
           {resumeData.education.map((item, index) => (
             <li className="timeline-item relative mb-[20px]" key={index}>
-              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] font-fw-500 capitalize text-white-2">
-                {item.title}
-              </h4>
+              <div className="mb-[7px]">
+                <h4 className="h4 timeline-item-title mb-[7px] text-[15px] font-fw-500 capitalize text-white-2">
+                  {item.school}
+                </h4>
+                <p className="text-[14px] italic text-light-gray-70">
+                  {item.course}
+                </p>
+              </div>
               <span className="font-fw-500 text-vegas-gold">{item.date}</span>
               <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
                 {item.description}
               </p>
             </li>
           ))}
-        </ol>
+        </ol> 
       </section>
 
       {/* Experience timeline section */}
@@ -58,14 +66,46 @@ const Resume = () => {
                 {item.title}
               </h4>
               <span className="font-fw-500 text-vegas-gold">{item.date}</span>
-              <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
-                {item.description}
-              </p>
+              {item.description.map((point, idx) => (
+                <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
+                  {point}
+                </p>
+              ))}
             </li>
           ))}
         </ol>
       </section>
 
+
+      {/* POR timeline section */}
+      <section className="timeline">
+        <div className="mb-[25px] mt-[40px] flex items-center gap-5">
+          <div className="flex h-[48px] w-[48px] items-center justify-center rounded-lg border-[1px] border-solid border-jet bg-eerie-black-1 text-orange-yellow-crayola shadow-shadow-1">
+            <img src={por}></img>
+          </div>
+          <h3 className="text-[20px] font-fw-500 capitalize text-white-2 max-md:text-[18px] max-md:font-fw-600">
+            Position of Responsibilities
+          </h3>
+        </div>
+        {/* List of POR items */}
+        <ol className="timeline-list ml-[65px] text-[15px]">
+          {resumeData.por.map((item, index) => (
+            <li className="timeline-item relative mb-[20px]" key={index}>
+              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] font-fw-500 capitalize text-white-2">
+                {item.title}
+              </h4>
+              <span className="font-fw-500 text-vegas-gold">{item.date}</span>
+              {item.description.map((point, idx) => (
+                <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
+                  {point}
+                </p>
+              ))}
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      
       {/* Skills section */}
       <section className="skill max-md:mb-10">
         <h3 className="mb-[20px] text-[24px] font-fw-500 capitalize text-white-2 max-md:text-[22px]">

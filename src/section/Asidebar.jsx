@@ -24,7 +24,7 @@ const Asidebar = () => {
             src={avatar}
             alt={name}
             width="150"
-            className="max-lg:w-[70px] max-md:w-[90px]"
+            className="max-lg:w-[70px] max-md:w-[90px] rounded-[8px]"
           />
         </figure>
         <div className="mb-[10px] flex flex-col text-2xl font-fw-600 text-white-2 max-xl:ml-4 max-xl:justify-start max-lg:text-[20px] max-md:m-0 max-md:text-[18px]">
@@ -40,7 +40,7 @@ const Asidebar = () => {
 
           <button
             onClick={toggleHeight}
-            className="absolute flex items-center justify-center rounded-lg border-[1px] border-solid border-jet bg-eerie-black-2 p-2 text-vegas-gold max-xl:visible max-xl:right-16 max-xl:top-16 max-md:right-3 max-md:top-3 xl:hidden"
+            className="absolute flex gap-2 items-center justify-center rounded-lg border-[1px] border-solid border-jet bg-eerie-black-2 p-2 text-vegas-gold max-xl:visible max-xl:right-16 max-xl:top-16 max-md:right-3 max-md:top-3 xl:hidden"
           >
             <span className="text-[10px] max-lg:visible max-md:hidden">
               Show Contacts
@@ -79,7 +79,7 @@ const Asidebar = () => {
 
         <ul className="m-auto flex size-[48px] items-center justify-center gap-8 rounded-[12px] text-[18px] text-light-gray">
           {social.map((item, index) => (
-            <li key={index}>
+            <li key={index} >
               <a href={item.link} className="social-link">
                 <IonIcon icon={item.icon}></IonIcon>
               </a>

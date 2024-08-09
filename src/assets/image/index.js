@@ -1,31 +1,13 @@
 // Import images
-import avatar1 from "./avatar-1.png";
-import avatar2 from "./avatar-2.png";
-import avatar3 from "./avatar-3.png";
-import avatar4 from "./avatar-4.png";
+
 import avatarmy from "./my-avatar.png";
-import blog1 from "./blog-1.jpg";
-import blog2 from "./blog-2.jpg";
-import blog3 from "./blog-3.jpg";
-import blog4 from "./blog-4.jpg";
-import blog5 from "./blog-5.jpg";
-import blog6 from "./blog-6.jpg";
 import iconDev from "./icon-dev.svg";
-import iconPhoto from "./icon-photo.svg";
-import iconApp from "./icon-app.svg";
 import iconDesign from "./icon-design.svg";
-import iconQuote from "./icon-quote.svg";
 import logo from "./logo.svg";
-import logo1Color from "./logo-1-color.png";
-import logo2Color from "./logo-2-color.png";
-import logo3Color from "./logo-3-color.png";
-import logo4Color from "./logo-4-color.png";
-import logo5Color from "./logo-5-color.png";
-import logo6Color from "./logo-6-color.png";
 import myAvatar from "./my-avatar.png";
-import project1 from "./project-1.jpg";
+import project1 from "./project-1.png";
 import project2 from "./project-2.png";
-import project3 from "./project-3.jpg";
+import project3 from "./project-3.png";
 import project4 from "./project-4.png";
 import project5 from "./project-5.png";
 import project6 from "./project-6.png";
@@ -40,13 +22,54 @@ import location from "./location.svg";
 import fb from "./fb.svg";
 import insta from "./insta.svg";
 import x from "./x.svg";
+import github from "./github.svg";
 import book from "./book.svg";
 import book2 from "./book2.svg";
 import eye from "./eye.svg";
 import send from "./send.svg";
+import resumeLogo from "./resumelogo.svg"
+import por from "./por.svg";
+import framework1 from "./framework1.jpg";
+import framework2 from "./framework2.jpg";
+import framework3 from "./framework3.svg";
+import framework4 from "./framework4.jpg";
+import framework5 from "./framework5.svg";
+import framework6 from "./framework6.png";
+import lang1 from "./language1.jpg";
+import lang2 from "./language2.jpg";
+import lang3 from "./language3.jpg";
+import lang4 from "./language4.jpg";
+import lang5 from "./language5.jpg";
+import lang6 from "./language6.jpg";
+import db1 from "./database1.jpg";
+import tool1 from "./tools1.jpg";
+import tool2 from "./tools2.jpg";
+import tool3 from "./tools3.svg";
+import tool4 from "./tools4.jpg";
+import tool5 from "./tools5.png";
 
 // Export images
 export {
+  lang1,
+  lang2,
+  lang3,
+  lang4,
+  lang5,
+  lang6,
+  db1,
+  tool2,
+  tool3,
+  tool1,
+  tool4,
+  tool5,
+  framework1,
+  framework2,
+  framework3,
+  framework4,
+  framework5,
+  framework6,
+  por,
+  resumeLogo,
   send,
   eye,
   book2,
@@ -54,34 +77,16 @@ export {
   x,
   fb,
   insta,
+  github,
   location,
   calendar,
   telephone,
   email,
   arrowdown,
   avatarmy,
-  avatar1,
-  avatar2,
-  avatar3,
-  avatar4,
-  blog1,
-  blog2,
-  blog3,
-  blog4,
-  blog5,
-  blog6,
   iconDev,
-  iconPhoto,
-  iconApp,
   iconDesign,
-  iconQuote,
   logo,
-  logo1Color,
-  logo2Color,
-  logo3Color,
-  logo4Color,
-  logo5Color,
-  logo6Color,
   myAvatar,
   project1,
   project2,

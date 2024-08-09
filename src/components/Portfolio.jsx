@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { portfolioData } from "../content"; // Assuming portfolioData is imported correctly
+import { projectData } from "../content"; // Assuming projectData is imported correctly
 import { eye } from "../assets/image";
 
 // Functional component for displaying portfolio projects with filtering
@@ -14,8 +14,8 @@ const Portfolio = () => {
   // Filtering projects based on selected category
   const filteredProjects =
     selectedCategory === "All"
-      ? portfolioData.projects
-      : portfolioData.projects.filter(
+      ? projectData.projects
+      : projectData.projects.filter(
           (project) => project.category === selectedCategory,
         );
 
@@ -24,7 +24,7 @@ const Portfolio = () => {
       {/* Portfolio section header */}
       <header className="relative max-md:left-1">
         <h2 className="article-title mb-[20px] text-[32px] font-fw-500 capitalize text-white-2 max-md:text-[22px] max-md:font-fw-600">
-          Portfolio
+          Projects
         </h2>
       </header>
 
@@ -32,7 +32,7 @@ const Portfolio = () => {
       <section className="projects">
         {/* Category filter list */}
         <ul className="filter-list mb-[30px] flex flex-wrap items-center justify-start gap-6 pl-1 max-md:gap-0">
-          {portfolioData.categories.map((category, index) => (
+          {projectData.categories.map((category, index) => (
             <li
               className="filter-item mt-[30px] rounded-md border-solid font-fw-400 max-md:ml-2 max-md:mt-[15px] max-md:border-[1px] max-md:border-jet max-md:p-2 max-md:text-center"
               key={index}
@@ -61,7 +61,7 @@ const Portfolio = () => {
               // data-filter-item
               // data-category={project.category.toLowerCase().replace(' ', '-')}
             >
-              <a href="#" className="">
+              <a href={project.link} className="">
                 {/* Project image */}
                 <figure className="project-img relative mb-2 overflow-hidden rounded-lg">
                   {/* Hover effect */}
