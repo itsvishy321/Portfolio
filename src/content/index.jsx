@@ -191,10 +191,6 @@ export const technologies = {
       image: lang2,
     },
     {
-      title: "sql",
-      image: lang5,
-    },
-    {
       title: "html",
       image: lang4,
     },
@@ -209,6 +205,10 @@ export const technologies = {
     {
       title: "postgresql",
       image: db1,
+    },
+    {
+      title: "sql",
+      image: lang5,
     },
   ],
   databases : [
