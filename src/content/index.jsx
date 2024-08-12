@@ -41,7 +41,7 @@ import {
 
 export const avatar = avatarmy;
 export const name = "Vishal Verma";
-export const title = "Web developer";
+export const title = "Software developer";
 
 export const contacts = [
   {
