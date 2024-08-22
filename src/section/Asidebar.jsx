@@ -19,12 +19,12 @@ const Asidebar = () => {
       } max-xl:w-full max-xl:p-9 max-xl:pt-8 max-lg:p-5 max-md:mb-2 max-md:p-5 max-md:py-4`}
     >
       <div className="flex animate-show flex-col items-center justify-center gap-4 max-xl:flex-row max-xl:justify-start max-lg:ml-2 max-lg:gap-2">
-        <figure className="rounded-[35px] bg-gradient-onyx max-lg:rounded-[10px] max-md:rounded-2xl">
+        <figure className="rounded-full bg-gradient-onyx ">
           <img
             src={avatar}
             alt={name}
             width="150"
-            className="max-lg:w-[70px] max-md:w-[90px] rounded-[8px]"
+            className="max-lg:w-[70px] max-md:w-[90px] rounded-full p-3 max-md:p-2"
           />
         </figure>
         <div className="mb-[10px] flex flex-col text-2xl font-fw-600 text-white-2 max-xl:ml-4 max-xl:justify-start max-lg:text-[20px] max-md:m-0 max-md:text-[18px]">
